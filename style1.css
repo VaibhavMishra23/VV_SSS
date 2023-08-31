@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4) url('town.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.nav2{
+    display: flex;
+    width: 70%;
+}
+.nav-list{
+    display: flex;
+    font-size: 20px;
+}
+.nav-list li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: 25px;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-list li a:hover{
+    color: rgb(205, 106, 238);
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 100px;
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.search{
+    width: 200px;
+    height: 18px;
+}
+#btn1{
+    font-size: 16px;
+    border-radius: 100px;
+}
+.search{
+    border-radius: 20px;
+    width: 250px;
+    height: 23px;
+}
+.intro1{
+    color: white;
+    display: flex;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    padding: 12px;
+}
+.back{
+    background: rgba(0,0,0,0.4) url('town.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.btnm{
+    color: white;
+    width: 70px;
+    font-size: 20px;
+    background: none;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.btnm:hover{
+    color: greenyellow;
+}
+.introimg{
+    margin-left: 12px;
+}
+.introimg img{
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.whole{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+.rev{
+    flex-direction: row-reverse;
+}
+frame{
+    margin: 10px 10px 10px 10px;
+}
+.ino img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(67, 169, 243);
+    border-radius: 50px;
+    margin: 0px 10px 10px 10px;
+}
+.fill img{
+    filter: blur(20px);
+}
+.play{
+    background-color: rgb(93, 255, 96);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.play:hover{
+    background-color: rgb(255, 144, 141);
+    font-size: 20px;
+}
+.contact{
+    background-color: #f3ebe0;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+.size2{
+    width: 423px;
+    height: 38px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.sub{
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+#burger{
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 15px;
+    display: none;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width: 1245px){
+    .rightnav{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .nav2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+    }
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    #burger{
+        display: block;
+    }
+}
+.son{
+    display: block;
+}
+@media only screen and (max-width: 705px){
+    .intro1{
+        height: 900px;
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+    }
+    .introimg img{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    .size2{
+    width: 323px;
+    }
+    .nav-list{
+        margin-right: 100px;
+    }
+}
+.body{
+    background: url("snakebackground.webp");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(170, 236, 170),rgb(236, 236,167));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(purple,green);
+    border: 2px solid purple;
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(red , purple);
+    border: .25vmin solid white;
+    border-radius: 100px;
+}
+.snake{
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 15px;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
